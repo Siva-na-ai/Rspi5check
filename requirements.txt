@@ -1,0 +1,31 @@
+# ═══════════════════════════════════════════════════════════════
+# requirements.txt — Desktop / Server (x86_64 / amd64)
+# Person Tracker: YOLOv11n + ByteTrack
+# Install: pip install -r requirements.txt
+# ═══════════════════════════════════════════════════════════════
+
+# ── Core ────────────────────────────────────────────────────────
+ultralytics>=8.3.0          # YOLOv11 + built-in ByteTrack / BotSORT
+
+# ── Computer Vision ─────────────────────────────────────────────
+opencv-python>=4.9.0        # standard OpenCV (includes GUI window support)
+
+# ── Numerical ───────────────────────────────────────────────────
+numpy>=1.24.0
+
+# ── PyTorch — CPU only (safe default) ───────────────────────────
+torch>=2.2.0
+torchvision>=0.17.0
+
+# ── PyTorch — GPU/CUDA 12.x (uncomment & remove CPU block above)
+# --index-url https://download.pytorch.org/whl/cu121
+# torch>=2.2.0+cu121
+# torchvision>=0.17.0+cu121
+
+# ── Utilities (pulled by ultralytics; pinned for stability) ──────
+PyYAML>=6.0
+Pillow>=10.0.0
+tqdm>=4.65.0
+requests>=2.31.0
+psutil>=5.9.0
+scipy>=1.11.0
